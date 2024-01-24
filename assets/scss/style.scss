@@ -1,0 +1,54 @@
+
+$primary-color: white;
+$primary-text: #23272a;
+$background-color: #404eed;
+
+body {
+    background-color: $background-color;
+    color: $primary-color;
+    font-family: Inter;
+    display:flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    margin: 0 20px;
+}
+
+a.app-button {
+    font-size: 14px;
+    border-radius: 99px;
+    background-color: white;
+    color: $primary-text;
+    padding: 12px 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    font-family: inherit;
+    font-weight: 600;
+    margin: 30px 130px;
+}
+
+.hero {
+    height: 20px;
+}
+
+.hero-image {
+    position: absolute;
+}
+
+.hero2 {
+    left: 0;
+    bottom: 0;
+    margin-left: -170px;
+    display: block;
+}

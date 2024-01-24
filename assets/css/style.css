@@ -1,0 +1,50 @@
+body {
+  background-color: #404eed;
+  color: white;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+a.app-button {
+  font-size: 14px;
+  border-radius: 99px;
+  background-color: white;
+  color: #23272a;
+  padding: 12px 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  font-family: inherit;
+  font-weight: 600;
+  margin: 30px 130px;
+}
+
+.hero {
+  display: flex;
+  height: 50px;
+}
+
+.hero-image {
+  position: absolute;
+}
+
+.hero2 {
+  left: 0;
+  bottom: 0;
+  margin-left: -170px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
