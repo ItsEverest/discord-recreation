@@ -1,54 +1,124 @@
 
-$primary-color: white;
-$primary-text: #23272a;
+$white-text: #ffffff;
+$dark-text: #23272a;
+$primary-button: white;
+$secondary-button: #23272a;
 $background-color: #404eed;
 
+logo.g {
+    color: white;
+}
+
 body {
-    background-color: $background-color;
-    color: $primary-color;
     font-family: Inter;
-    display:flex;
+    font-size: 14px;
+    margin: 0;
+}
+
+header {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-weight:600;
+    width: 100%;
+}
+
+.navigation {
+    a {
+        padding: 5px 5px;
+        margin: 15px;
+    }
+    margin: 0 180px;
+}
+
+.logo {
+    margin: 20px 0;
 }
 
 a {
     text-decoration: none;
-    color: $primary-color;
-    margin: 0 20px;
+    color: $white-text;
 }
 
-a.app-button {
-    font-size: 14px;
-    border-radius: 99px;
-    background-color: white;
-    color: $primary-text;
-    padding: 12px 20px;
-}
-
-nav {
+.primary-button {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: $primary-button;
+    color: $dark-text;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 12px 16px;
+    border-radius: 20px;
+}
+
+.secondary-button {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: $secondary-button;
+    color: $white-text;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 12px 16px;
+    border-radius: 20px;
+}
+
+.hero-section {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    background-color: $background-color;
 }
 
-.navigation {
-    font-family: inherit;
-    font-weight: 600;
-    margin: 30px 130px;
+.hero-text {
+    align-items: center;
+    color: $white-text;
+    width: 780px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.hero {
-    height: 20px;
+.hero-header {
+    font-size: 66px;
+    color: $white-text;
+    font-weight: 800;
 }
 
-.hero-image {
-    position: absolute;
+.description {
+    margin: 30px 0;
+    line-height: 32px;
+    font-size: 18px;
 }
 
-.hero2 {
-    left: 0;
-    bottom: 0;
-    margin-left: -170px;
-    display: block;
+.hero-text {
+    .primary-button {
+        width: 250px;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 16px 30px;
+        border-radius: 28px;
+    }
+
+    .secondary-button {
+        width: 250px;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 16px 30px;
+        border-radius: 28px;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 24px;
 }
